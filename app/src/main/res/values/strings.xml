@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Accessibility Exemples</string>
+    <string name="app_name">Exemplos de acessibilidade</string>
+    <string name="do_login">Faça o seu login</string>
+    <string name="user">Usuário</string>
+    <string name="pass">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="accessibility_examples">Lista de exemplos de acessibilidade</string>
+    <string name="access">Acessar</string>
+    <string name="go_back">Voltar</string>
+    <string name="custom_read">Leitura customizada</string>
+    <string name="cpf_sample">966.642.750–82</string>
 </resources>
