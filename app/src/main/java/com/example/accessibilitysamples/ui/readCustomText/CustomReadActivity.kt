@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.accessibilitysamples.R
 import com.example.accessibilitysamples.databinding.ActivityCustomReadBinding
 import com.example.accessibilitysamples.extensions.setContentDescriptionCpf
+import com.example.accessibilitysamples.extensions.setContentDescriptionMobileNumber
 
 class CustomReadActivity : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class CustomReadActivity : AppCompatActivity() {
 
     private fun setAccessibility() {
         binding.tvCpf.setContentDescriptionCpf()
+        binding.tvMobileNumber.setContentDescriptionMobileNumber()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
