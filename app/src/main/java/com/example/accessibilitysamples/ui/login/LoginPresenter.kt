@@ -1,8 +1,7 @@
 package com.example.accessibilitysamples.ui.login
 
-import android.os.AsyncTask
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
+import android.os.Handler
+import android.os.Looper
 
 class LoginPresenter(
     private val view: LoginContract.View
@@ -22,13 +21,13 @@ class LoginPresenter(
 
     override fun onLogin() {
         view.setLoadingVisibility(true)
-        AsyncTask.execute {
-            runBlocking {
-                delay(1000)
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
                 view.setLoadingVisibility(false)
                 view.loginSuccess()
-            }
-        }
+            },
+            1000L
+        )
     }
 
     private fun verifyUserData() {

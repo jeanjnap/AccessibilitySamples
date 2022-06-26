@@ -10,4 +10,6 @@
     <string name="custom_read">Leitura customizada</string>
     <string name="cpf_sample">966.642.750–82</string>
     <string name="mobile_number_sample">(11) 98765–4321</string>
+    <string name="dynamic_list">Lista dinâmica</string>
+    <string name="getting_dynamic_content">Obtendo conteúdo de forma dinâmica</string>
 </resources>

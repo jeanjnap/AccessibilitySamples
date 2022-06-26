@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.accessibilitysamples.databinding.ActivityHomeBinding
+import com.example.accessibilitysamples.ui.dynamicList.DynamicListActivity
 import com.example.accessibilitysamples.ui.readCustomText.CustomReadActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -28,8 +29,8 @@ class HomeActivity : AppCompatActivity() {
                     description = "Faça com que a acessibilidade leia um texto de forma customizada."
                 ),
                 DashItem(
-                    title = "Exemplo não mapeado",
-                    description = "Crie um outro exemplo de acessibilidade mostrando um outro comportamento diferente que possa ser customizado."
+                    title = "Lista Dinâmica",
+                    description = "Carregamento de conteúdo de uma lista de forma dinâmica para que a acessibilidade possa ler de forma correta."
                 ),
                 DashItem(
                     title = "Exemplo não mapeado",
@@ -42,6 +43,7 @@ class HomeActivity : AppCompatActivity() {
     private fun onItemClicked(position: Int) {
         when (position) {
             0 -> CustomReadActivity.start(this)
+            1 -> DynamicListActivity.start(this)
         }
     }
 

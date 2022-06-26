@@ -39,7 +39,7 @@ class DashHomeAdapter(
 
     fun submitList(newList: List<DashItem>) {
         list = newList
-        notifyDataSetChanged()
+        notifyItemRangeChanged(0, list.size)
     }
 
     companion object {

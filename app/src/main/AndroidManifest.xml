@@ -3,7 +3,7 @@
     package="com.example.accessibilitysamples">
 
     <application
-        android:name="com.example.accessibilitysamples.AccessibilityApplication"
+        android:name=".AccessibilityApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,14 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AccessibilityExemples.NoActionBar">
         <activity
-            android:name="com.example.accessibilitysamples.ui.readCustomText.CustomReadActivity"
-            android:theme="@style/Theme.AccessibilityExemples"
+            android:name=".ui.dynamicList.DynamicListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AccessibilityExemples"/>
+        <activity
+            android:name=".ui.readCustomText.CustomReadActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AccessibilityExemples" />
+        <activity
+            android:name=".ui.home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.accessibilitysamples.ui.home.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.accessibilitysamples.ui.login.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
