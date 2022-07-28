@@ -55,8 +55,10 @@
             android:id="@+id/tiet_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription=" "
             android:hint="@string/pass"
             android:imeOptions="actionDone"
+            android:inputType="textPassword"
             android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
